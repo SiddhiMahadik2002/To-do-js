@@ -13,22 +13,20 @@
         <div class="todoscreen">
             <h2>Todo App</h2>
             <div class="addtodosec">
-                <input type="text" placeholder="Add your new to do">
-                <button><ion-icon name="add-outline"></ion-icon></button>
+                <input type="text" id="todoinput" placeholder="Add your new to do">
+                <button id="addbtn"><ion-icon name="add-outline"></ion-icon></button>
             </div>
             <div class="todolist">
-                <p>MY FIRST TODO</p>
                 
-                <button><ion-icon name="trash-outline"></ion-icon></button>
             </div>
             <div class="todostats">
-                <p>You have 0 pending tasks</p>
-                <button>clear all</button>
+                <p>You have <span id="stats">0</span> pending tasks</p>
+                <button class="clear">Clear All</button>
             </div>
         </div>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+<script src="app.js"></script>
 </body>
 </html>
